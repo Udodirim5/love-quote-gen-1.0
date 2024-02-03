@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Image Display</title>
+</head>
+
+<body>
+    <video autoplay loop muted>
+        <source src="./img/bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h1>𝓘 𝓛𝓞𝓥𝓔 𝓨𝓞𝓤!</h1>
+    <div class="parent">
+        <form id="imageForm">
+            <input type="text" placeholder="Enter partner's first name here..." id="fname" required>
+            <input type="text" placeholder="Enter partner's last name here..." id="lname" required>
+            <input type="file" id="imageInput" accept="image/*">
+            <div class="gender">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="">Please select one…</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                        </div>
+            <button type="button" id="openModalBtn">Submit</button>
+        </form>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModalBtn">&times;</span>
+
+                <div class="outputed">
+                    <div id="imageContainer"></div>
+                    <div class="message-container">
+                        <div class="name">
+                            <div>
+                                <p id="fname-output"></p>
+                            </div>
+                            <div>
+                                <p id="lname-output"></p>
+                            </div>
+                            <div>
+                                <p id="gender-output"></p>
+                            </div>
+                        </div>
+                        <p id="message"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
