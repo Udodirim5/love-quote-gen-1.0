@@ -20,7 +20,7 @@ function getRandomMessage(messageArray) {
 
 
 
-const for_her = [
+const from_him = [
     "Just thinking about you puts a smile on my face.", 
     "Every time our hands touch I feel a spark. Every time we embrace, I feel on top of the world. I love you. ", 
     "You are the most beautiful person, both inside and out. I am so lucky to have you as my girlfriend.", 
@@ -36,7 +36,7 @@ const for_her = [
     "I love driving through the city with you by my side.",  
     "You are my everything, I can't imagine life without you."
 ];
-const for_him = [
+const from_her = [
     "You are my everything, and I am so grateful for your love and support.",
     "You are the sunshine in my life, and I love you more than words can express.",
     "You're my strength, my protector and my hero. You're a man every woman would want by her side.",
@@ -57,8 +57,8 @@ const for_him = [
 ];
 
 function displayImage() {
-    const randomMessageArray1 = getRandomMessage(for_her);
-    const randomMessageArray2 = getRandomMessage(for_him);
+    const randomMessageArray1 = getRandomMessage(from_him);
+    const randomMessageArray2 = getRandomMessage(from_her);
     
     
 
@@ -84,12 +84,12 @@ function displayImage() {
 
     if  (get_gen == "male"){
         gen_output.innerHTML = "M";
-        msg.innerHTML = say + ": " + randomMessageArray1;
+        msg.innerHTML = say + ": " + randomMessageArray2;
 
     }
     else if  (get_gen == "female"){
         gen_output.innerHTML = "F";
-        msg.innerHTML = say + ": " + randomMessageArray2;
+        msg.innerHTML = say + ": " + randomMessageArray1;
     }
 
     f_name_out.innerHTML = f_name;
