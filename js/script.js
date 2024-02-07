@@ -67,9 +67,7 @@ function displayImage() {
     let l_name = document.getElementById("lname").value;
     let d_img = document.getElementById("imageInput").value;
     let get_gen = document.getElementById("gender").value;
-    let say = "Says";
-    say.style.fontWeight = "bold'";
-    
+    let say = "Says";    
 
     // Check if either of the input fields is empty
     if (f_name.trim() === '' || l_name.trim() === '' || d_img.trim() === '' || get_gen.trim() === '') {
