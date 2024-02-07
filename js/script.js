@@ -57,8 +57,9 @@ const for_him = [
 ];
 
 function displayImage() {
-    const randomMessageArray1 = getRandomMessage(for_him);
-    const randomMessageArray2 = getRandomMessage(for_her);
+    const randomMessageArray1 = getRandomMessage(for_her);
+    const randomMessageArray2 = getRandomMessage(for_him);
+    
     
 
 
