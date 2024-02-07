@@ -67,6 +67,8 @@ function displayImage() {
     let l_name = document.getElementById("lname").value;
     let d_img = document.getElementById("imageInput").value;
     let get_gen = document.getElementById("gender").value;
+    let say = "Says";
+    say.style.fontWeight = "bold'";
     
 
     // Check if either of the input fields is empty
@@ -83,12 +85,12 @@ function displayImage() {
 
     if  (get_gen == "male"){
         gen_output.innerHTML = "M";
-        msg.innerHTML = randomMessageArray1;
+        msg.innerHTML = say + ": " + randomMessageArray1;
 
     }
     else if  (get_gen == "female"){
         gen_output.innerHTML = "F";
-        msg.innerHTML = randomMessageArray2;
+        msg.innerHTML = say + ": " + randomMessageArray2;
     }
 
     f_name_out.innerHTML = f_name;
